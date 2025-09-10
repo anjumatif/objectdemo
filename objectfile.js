@@ -29,3 +29,18 @@ const blogPost = {
 console.log(blogPost.author.name);
 
 console.log(blogPost.tags[1]);
+
+console.log(blogPost.tags.length);
+
+console.log(
+  `There are ${blogPost.tags.length} tags for post "${blogPost.title}":`
+);
+
+for (let i = 0; i < blogPost.tags.length; i++) {
+  console.log(blogPost.tags[i]);
+}
+
+console.log(`Tags for post "${blogPost.title}":`);
+for (let tags of blogPost.tags) {
+  console.log(tags);
+}
